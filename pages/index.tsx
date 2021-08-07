@@ -15,7 +15,9 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Hello, I'm Eva</h1>
+        <h1 className={styles.title} data-testid="cats">
+          Hello
+        </h1>
 
         <p className={styles.description}>
           Check out some of my blog posts, projects, or newsletters below.
