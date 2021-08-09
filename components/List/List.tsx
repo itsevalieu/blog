@@ -1,5 +1,5 @@
 import styles from "./List.module.scss";
-import ListItem from "@components/ListItem";
+import ListItem from "@components/List/ListItem";
 
 type ListProps = {
   items: any[];
