@@ -1,9 +1,31 @@
+import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../../styles/Home.module.scss";
+import styles from "@styles/Home.module.scss";
 import Link from "next/link";
+import List from "@components/List";
 
 export default function Issues() {
+  const [items, setItems] = useState<any[]>([
+    {
+      id: 1,
+      title: "Cat's Cradle1",
+      excerpt: "This is an excerpt of cat's cradle.",
+      date: "10/10/10",
+    },
+    {
+      id: 2,
+      title: "Cat's Cradle2",
+      excerpt: "This is an excerpt of cat's cradle.",
+      date: "10/10/10",
+    },
+    {
+      id: 3,
+      title: "Cat's Cradle3",
+      excerpt: "This is an excerpt of cat's cradle.",
+      date: "10/10/10",
+    },
+  ]);
   return (
     <div className={styles.container}>
       <Head>
@@ -25,7 +47,7 @@ export default function Issues() {
             <a>Back Home</a>
           </Link>
         </div>
-
+        <List items={items} />
         <div className={styles.grid}></div>
       </main>
 
