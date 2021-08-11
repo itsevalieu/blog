@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.scss";
 import Link from "next/link";
 import Footer from "@components/Footer/Footer";
+import Header from "@components/Header/Header";
 
 export default function Home() {
   return (
@@ -13,6 +14,8 @@ export default function Home() {
         <meta name="description" content="Blog for Eva" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <Header />
 
       <main className={styles.main}>
         <h1 className={styles.title} data-testid="cats">
